@@ -1,3 +1,7 @@
-<% @products.each do |product| %>
-  <%= product.name %>
+<ul>
+<% @products.each do |song| %>
+  <li><%= display_artist(song) %> - <%= link_to song.title, product_path(song) %></li>
 <% end %>
+</ul>
+<br>
+<%= link_to "Add New Product", new_product_path %>
