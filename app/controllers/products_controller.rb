@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   
   def index
-    @items = Item.all
+    @products = Product.all
     render "products/index"
   end
 
