@@ -4,6 +4,6 @@ class ProductsController < ApplicationController
     cart
   end
 
-  
+  def add
   
 end
