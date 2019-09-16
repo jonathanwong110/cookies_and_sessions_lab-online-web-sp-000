@@ -1,10 +1,8 @@
-<% if session[:cart] %>
-  <ul>
-    <% session[:cart].each do |product| %>
-    <li> <%= product %> </li>
-    <% end %>
-  </ul>
-<% end %>
+<ul>
+  <% cart.each do |product| %>
+  <li> <%= product %> </li>
+  <% end %>
+</ul>
 
 <% form_tag ("/") %>
   <%= text_field_tag :product %>
