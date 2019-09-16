@@ -6,6 +6,7 @@
   </ul>
 <% end %>
 
-<% form_tag ("/") %>
-  <%= text_field_tag "product" %>
-  
+<% form_for ("/") do |f| %>
+  <%= f.product %>
+  <%= f.submit %>
+<% end %>
