@@ -4,4 +4,6 @@ class ProductsController < ApplicationController
     cart
   end
 
+  
+  
 end
