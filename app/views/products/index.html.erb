@@ -1,0 +1,6 @@
+<% if session[:cart] %>
+  <ul>
+    <% session[:cart].each do |product| %>
+    <li></li>  <%= product %>
+    <% end %>
+  </ul>
